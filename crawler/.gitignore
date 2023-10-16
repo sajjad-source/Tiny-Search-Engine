@@ -1,0 +1,5 @@
+crawler
+*.o
+*.a
+data/
+testing.out
