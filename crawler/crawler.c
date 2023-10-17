@@ -18,6 +18,7 @@
 #include "bag.h"
 #include "pagedir.h"
 #include <string.h>
+#include <ctype.h>
 
 /* Function declarations */
 void parseArgs(int argc, char* argv[], char** seedURL, char** pageDirectory, int* maxDepth);
@@ -77,6 +78,16 @@ void parseArgs(int argc, char* argv[], char** seedURL, char** pageDirectory, int
             printf("Error initializing pageDirectory\n");
             free(normalizedURL);
             exit(1);
+        }
+
+        for (int i = 0; argv[3][i] != '\0'; i++)                        // Check if maxDepth is an integer
+        {
+            if (!isdigit(argv[3][i])) 
+            {
+                printf("maxDepth should be a non-negative integer.\n");
+                free(normalizedURL);
+                exit(1);
+            }
         }
 
         *maxDepth = atoi(argv[3]);                                      // Extract and check max depth
