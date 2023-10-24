@@ -1,0 +1,6 @@
+indexer
+indextest
+*.o
+*.a
+*.index
+data

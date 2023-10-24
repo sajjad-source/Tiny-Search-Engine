@@ -1,0 +1,68 @@
+=====================================================
+Testing: Incorrect Arguments
+=====================================================
+Usage: ./indexer pageDirectory indexFilename
+Usage: ./indexer pageDirectory indexFilename
+Usage: ./indexer pageDirectory indexFilename
+Unable to open file Trying to write to a read only directory...
+Trying to overwrite a read-only file...
+Unable to open file=====================================================
+Testing with valgrind: letters at depth 5
+=====================================================
+==3361936== Memcheck, a memory error detector
+==3361936== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3361936== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==3361936== Command: ./indexer ../crawler/data/letters-5 data//letters-5.index
+==3361936== 
+==3361936== 
+==3361936== HEAP SUMMARY:
+==3361936==     in use at exit: 0 bytes in 0 blocks
+==3361936==   total heap usage: 2,022 allocs, 2,022 frees, 208,674 bytes allocated
+==3361936== 
+==3361936== All heap blocks were freed -- no leaks are possible
+==3361936== 
+==3361936== For lists of detected and suppressed errors, rerun with: -s
+==3361936== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=====================================================
+Testing with valgrind: toscrape at depth 1
+=====================================================
+==3361937== Memcheck, a memory error detector
+==3361937== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3361937== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==3361937== Command: ./indexer ../crawler/data/toscrape-1 data//toscrape-1.index
+==3361937== 
+==3361937== 
+==3361937== HEAP SUMMARY:
+==3361937==     in use at exit: 0 bytes in 0 blocks
+==3361937==   total heap usage: 2,336,042 allocs, 2,336,042 frees, 42,744,157,367 bytes allocated
+==3361937== 
+==3361937== All heap blocks were freed -- no leaks are possible
+==3361937== 
+==3361937== For lists of detected and suppressed errors, rerun with: -s
+==3361937== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=====================================================
+Testing letters at different depths
+=====================================================
+=====================================================
+Testing toscrape at different depths
+=====================================================
+=====================================================
+Testing wikipedia at different depths
+=====================================================
+=====================================================
+Testing indextest
+=====================================================
+Comparing data//letters-0.index and data//letters-0.indextest with indexcmp
+Comparing data//letters-1.index and data//letters-1.indextest with indexcmp
+Comparing data//letters-2.index and data//letters-2.indextest with indexcmp
+Comparing data//letters-5.index and data//letters-5.indextest with indexcmp
+Comparing data//letters-10.index and data//letters-10.indextest with indexcmp
+Comparing data//toscrape-0.index and data//toscrape-0.indextest with indexcmp
+Comparing data//toscrape-1.index and data//toscrape-1.indextest with indexcmp
+Comparing data//toscrape-2.index and data//toscrape-2.indextest with indexcmp
+Comparing data//toscrape-3.index and data//toscrape-3.indextest with indexcmp
+Comparing data//wikipedia-0.index and data//wikipedia-0.indextest with indexcmp
+Comparing data//wikipedia-1.index and data//wikipedia-1.indextest with indexcmp
+Comparing data//wikipedia-2.index and data//wikipedia-2.indextest with indexcmp
+=====================================================
+Finished testing
