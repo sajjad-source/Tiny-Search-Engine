@@ -1,0 +1,4 @@
+querier
+*.o
+*.out
+*.a
