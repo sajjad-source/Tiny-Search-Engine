@@ -144,21 +144,25 @@ char* read_query()
     printf("Query? ");
     char* query = NULL;
     size_t size = 0;
-    getline(&query, &size, stdin);          // Read the query from the user, allocating memory as needed
+    ssize_t len = getline(&query, &size, stdin); // Read the query from the user, allocating memory as needed
 
-    int len = strlen(query);
-    if (len > 0 && query[len - 1] == '\n')  // Check if the input string ends with a newline character and remove it
-    {
+    if (len == -1) { // Handle EOF or error
+        free(query); // Cleanup
+        return NULL;
+    }
+
+    if (len > 0 && query[len - 1] == '\n') {    // Check if the input string ends with a newline character and remove it
         query[len - 1] = '\0';
+        len--;
     }
 
-    for (int i = 0; i < len; i++)
-    {
-        query[i] = tolower(query[i]);       // Convert the query to lowercase for case-insensitive processing
+    for (int i = 0; i < len; i++) {
+        query[i] = tolower(query[i]);           // Convert the query to lowercase for case-insensitive processing
     }
 
-    return query;                           // Return the cleaned query string
+    return query;                               // Return the cleaned query string
 }
+
 
 /*
  * tokenize_query: Tokenize a query string into individual words.
@@ -261,12 +265,14 @@ void process_query(char* query, index_t* index, const char* pageDirectory)
     if (tokens == NULL)                                                 // Handle cases where tokenization fails or results in an empty query
     {
         printf("Error: failed to tokenize query\n");
+        free_tokens(tokens, numTokens);
         return;
     }
 
     if (numTokens == 0)
     {
         printf("Error: empty query\n");
+        free_tokens(tokens, numTokens);
         return;
     }
 
@@ -327,6 +333,7 @@ void process_query(char* query, index_t* index, const char* pageDirectory)
     if (result == NULL) 
     {
         printf("No documents match.\n");
+        free_tokens(tokens, numTokens);
         return;
     }
     
