@@ -1,0 +1,9 @@
+AND hello world
+OR programming languages
+hello AND
+world OR
+AND
+OR
+hello AND AND hello
+dog OR OR dog
+dog AND OR cat

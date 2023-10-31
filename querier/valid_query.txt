@@ -1,0 +1,23 @@
+dog
+cat
+tree
+computer
+science
+tiny
+search
+engine
+dog AND cat
+tree AND computer
+science AND tiny
+dog OR cat
+search OR engine
+computer OR science
+dog AND cat OR tree
+computer AND science OR tiny AND search
+engine OR tiny AND cat OR dog
+dog AND cat AND tree
+computer OR science OR engine
+tiny AND search OR engine
+computer AND science OR dog AND cat OR tree
+tiny AND search OR engine AND dog OR cat
+dog OR cat AND tree OR computer AND science
