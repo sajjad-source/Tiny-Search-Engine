@@ -3,5 +3,5 @@
 
 ****************
 * EXTENSION USED
-* FOR INDEXER LAB 5
+* FOR QUERIER LAB 6
 ****************
