@@ -1,4 +1,4 @@
 querier
 *.o
-*.out
 *.a
+fuzzquery
