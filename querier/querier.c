@@ -351,6 +351,16 @@ void process_query(char* query, index_t* index, const char* pageDirectory)
         printf("No documents match.\n");
     } else {
         // Print the sorted results
+        printf("\nQuery: ");
+        for (int i = 0; i < numTokens; i++) 
+        {
+            printf("%s", tokens[i]);
+            if (i < numTokens - 1) 
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
         printf("Matches %d documents (ranked):\n", size);
         for (int i = 0; i < size; i++) 
         {
