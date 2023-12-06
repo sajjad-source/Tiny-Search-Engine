@@ -1,4 +1,4 @@
-# CS50 TSE Querier
+# TSE Querier
 
 ## Design Spec
 

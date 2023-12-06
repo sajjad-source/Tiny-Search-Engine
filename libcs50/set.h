@@ -7,8 +7,6 @@
  * can retrieve items by asking for their key, but cannot remove or 
  * update pairs.  Items are distinguished by their key.
  *
- * David Kotz, April 2016, 2017, 2019, 2021
- * updated by Xia Zhou, July 2016
  */
 
 #ifndef __SET_H

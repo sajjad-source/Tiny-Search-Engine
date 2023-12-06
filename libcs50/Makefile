@@ -1,8 +1,6 @@
 # Makefile for CS50 library
 #   Builds and compiles all these utility functions into a library.
 #
-# David Kotz, April 2016, July 2017, April 2019, 2021
-# updated by Xia Zhou, July 2016
 
 # object files, and the target library
 OBJS = bag.o counters.o file.o hashtable.o hash.o mem.o set.o webpage.o

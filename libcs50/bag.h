@@ -7,7 +7,6 @@
  * of items. Since items are indistinguishable, the module is free to return
  * any item from the bag. 
  *
- * David Kotz, April 2016, 2017, 2019, 2021
  */
 
 #ifndef __BAG_H

@@ -1,4 +1,4 @@
-# CS50 TSE Indexer
+# TSE Indexer
 ## Requirements Spec
 
 > In a requirements spec, **shall do** means **must do**.

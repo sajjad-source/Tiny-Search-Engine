@@ -1,7 +1,4 @@
-# CS50 Lab 5
-## CS50 Fall 2023
-
-### Indexer
+## Indexer
 
 The `indexer` is a tool designed to process documents produced by the `crawler`, building an index that maps from words to documents. This index serves as the foundation for the search functionality facilitated by the `querier`.
 

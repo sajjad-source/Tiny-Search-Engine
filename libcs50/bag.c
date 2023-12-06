@@ -3,7 +3,6 @@
  *
  * see bag.h for more information.
  *
- * David Kotz, April 2016, 2017, 2019, 2021
  */
 
 #include <stdio.h>

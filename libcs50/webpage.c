@@ -2,16 +2,8 @@
  * webpage - utility functions for downloading, saving, and loading web pages.
  *           See webpage.h for usage.
  *
- * Original by Ira Ray Jenkins - April 2014
- * 
- * Updated by David Kotz - April 2016, July 2017, April 2019, 2021
- * Updated by Xia Zhou - July 2016, July 2018
- *
  */
 
-/* students shouldn't take advantage of the gnu extensions, 
- * but parsing html without them is a pain.
- */
 #define _GNU_SOURCE       // strncasecmp, strdup
 
 #include <stdlib.h>

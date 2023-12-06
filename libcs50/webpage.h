@@ -15,9 +15,6 @@
  * Othertimes, you have fetched the HTML and want to work with it;
  * then, the webpage object has a non-null HTML pointer.
  *
- * Original by Ira Ray Jenkins - April 2014
- * 
- * Updated by David Kotz - April 2016, July 2017, April 2019, 2021
  *
  */
 

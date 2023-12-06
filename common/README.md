@@ -1,5 +1,4 @@
-# CS50 Lab 3 - Common Module
-## CS50 Fall 2023
+# Common Module
 
 ### Overview
 The `common` directory contains shared utilities and functions for the CS50 tiny search engine project.

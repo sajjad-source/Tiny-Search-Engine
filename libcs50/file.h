@@ -1,7 +1,6 @@
 /* 
  * file utilities - reading a word, line, or entire file
  * 
- * David Kotz, 2016, 2017, 2019, 2021
  */
 
 #ifndef __FILE_H

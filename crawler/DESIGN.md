@@ -1,8 +1,7 @@
-# CS50 TSE Crawler
+# TSE Crawler
 ## Design Spec
 
 In this document we reference the [Requirements Specification](REQUIREMENTS.md) and focus on the implementation-independent design decisions.
-The knowledge unit noted that an [design spec](https://github.com/cs50fall2023/home/blob/main/knowledge/units/design.md#design-spec) may include many topics; not all are relevant to the TSE or the Crawler.
 Here we focus on the core subset:
 
 - User interface
@@ -96,7 +95,7 @@ Helper modules provide all the data structures we need:
 
 ## Testing plan
 
-We've established a '[playground](http://cs50tse.cs.dartmouth.edu/tse/)' for CS50 crawlers to explore.
+We've established a '[playground](http://cs50tse.cs.dartmouth.edu/tse/)' for crawler to explore.
 
 A sampling of tests that should be run:
 

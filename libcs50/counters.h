@@ -8,8 +8,6 @@
  * counter is incremented. The current counter value can be retrieved by
  * asking for the relevant key.
  * 
- * David Kotz, April 2016, 2017, 2019, 2021
- * Xia Zhou, July 2017
  */
 
 #ifndef __COUNTERS_H

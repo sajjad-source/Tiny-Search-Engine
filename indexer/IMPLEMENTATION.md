@@ -1,4 +1,4 @@
-# CS50 TSE Indexer
+# TSE Indexer
 ## Implementation Spec
 
 In this document we reference the [Requirements Specification](REQUIREMENTS.md) and [Design Specification](DESIGN.md) and focus on the implementation-specific decisions.

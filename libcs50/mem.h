@@ -14,7 +14,6 @@
  *    that needs to defensively check function parameters that
  *    "should never be NULL".
  *
- * David Kotz, April 2016, 2017, 2019, 2021
  */
 
 #ifndef __MEM_H

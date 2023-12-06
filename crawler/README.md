@@ -1,7 +1,4 @@
-# CS50 Lab 3
-## CS50 Fall 2023
-
-### Crawler
+## Crawler
 
 The `crawler` is a tool designed to traverse webpages, fetching content starting from a specified seed URL up to a defined depth. 
 The retrieved web pages are stored locally in a structured directory.

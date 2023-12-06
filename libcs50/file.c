@@ -3,7 +3,6 @@
  * 
  * See file.h for documentation.
  * 
- * David Kotz - 2016, 2017, 2019, 2021
  */
 
 #include <stdio.h>

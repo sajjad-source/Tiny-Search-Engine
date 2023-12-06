@@ -4,8 +4,6 @@
  * A *hashtable* is a set of (key,item) pairs.  It acts just like a set, 
  * but is far more efficient for large collections.
  *
- * David Kotz, April 2016, 2017, 2019, 2021
- * updated by Xia Zhou, July 2016
  */
 
 #ifndef __HASHTABLE_H

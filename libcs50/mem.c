@@ -8,7 +8,6 @@
  * 2. Variants that 'assert' the result is non-NULL;
  *    if NULL occurs, kick out an error and die.
  *
- * David Kotz, April 2016, 2017, 2019, 2021
  */
 
 #include <stdio.h>

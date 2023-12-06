@@ -1,7 +1,4 @@
-# CS50 Lab 3
-## CS50 Fall 2023
-
-### Querier
+## Querier
 
 The `querier` is a tool designed to search through a web page directory created by the `crawler`, and index the pages using the `indexer`. It loads the index file produced by the `indexer`, processes queries input by the user, and returns the results in descending order of relevance.
 
